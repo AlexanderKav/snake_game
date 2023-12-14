@@ -40,8 +40,6 @@ while game_is_on:
         with open("data.txt", mode="w") as file:
             file.write(f"{scoreboard.high_score}")
 
-        #game_is_on = False
-        #scoreboard.game_over()
 
     #Detect collision with tail.
     for segment in snake.segments:
@@ -53,8 +51,7 @@ while game_is_on:
             with open("data.txt", mode="w") as file:
                 file.write(f"{scoreboard.high_score}")
 
-            #game_is_on = False
-            #scoreboard.game_over()
+  
 
 
 
