@@ -1,8 +1,4 @@
 from turtle import Turtle
-#my solution
-#with open("data.txt", mode="r") as file:
- #   contents = file.read()
-  #  contents = str(contents)
 
 ALIGNMENT = "center"
 FONT = ("Courier", 24, "normal")
@@ -16,7 +12,6 @@ class Scoreboard(Turtle):
         self.high_score = 0
         with open("data.txt") as data:
             self.high_score = int(data.read())
-        #self.high_score = self.score
         self.color("white")
         self.penup()
         self.goto(0, 270)
@@ -38,12 +33,8 @@ class Scoreboard(Turtle):
         self.update_scoreboard()
 
 
-   # def game_over(self):
-    #    self.goto(0, 0)
-     #   self.write("GAME OVER", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         self.score += 1
-        #self.clear()
         self.update_scoreboard()
 
